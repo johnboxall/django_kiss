@@ -1,0 +1,17 @@
+<script>
+    var _kmq = _kmq || [];
+    function _kms(u) {
+        setTimeout(function() {
+            var s = document.createElement('script')
+              , f = document.getElementsByTagName('script')[0]; 
+            s.async = true;
+            s.src = u; 
+            f.parentNode.insertBefore(s, f);
+        }, 1);
+    }
+  
+    _kms('//i.kissmetrics.com/i.js');
+    _kms('//doug1izaerwt3.cloudfront.net/{{ KISS_API_KEY }}.1.js');
+    {% for event in kiss %}_kmq.push({{ event|safe }});
+    {% endfor %}
+</script>
