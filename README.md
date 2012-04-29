@@ -6,19 +6,17 @@ KISSmetrics recommends developers record events using their JavaScript API, howe
 
 Django Kiss uses the Django Session Framework to record events against a users session. The recorded in the session are then written out to an HTML page as JavaScript. The user's browser executes the JavaScript, firing the tracking requests to the KM API.
 
-----
-
 ## Installation
 
 * Install the package.
 
 * Update your `settings.py`:
 
-    INSTALLED_APPS += ('kiss',)
-    MIDDLEWARE_CLASSES += ('kiss.middleware.KissMiddleware',)
+        INSTALLED_APPS += ('kiss',)
+        MIDDLEWARE_CLASSES += ('kiss.middleware.KissMiddleware',)
 
-    KISS_API_KEY = 'YOUR_KM_API_KEY'
-    KISS_STORAGE = 'kiss.storage.session.SessionStorage'
+        KISS_API_KEY = 'YOUR_KM_API_KEY'
+        KISS_STORAGE = 'kiss.storage.session.SessionStorage'
 
 * Django Kiss requires the Django Session Framework to be installed.
 
@@ -54,3 +52,7 @@ To associate a particular request with an identity you can add a signal listener
 To run the tests:
 
     django-admin.py test kiss --settings=kiss.tests.test_settings
+
+## License
+
+MIT
