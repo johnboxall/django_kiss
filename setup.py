@@ -18,6 +18,10 @@ setup(
     url='http://github.com/johnboxall/django_kiss',
     packages=find_packages(),
     package_data={
+        '': [
+            'README.md',
+            'LICENSE'
+        ],
         'kiss': [
             'templates/kiss/*'
         ]
