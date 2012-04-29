@@ -9,7 +9,7 @@ def read(*parts):
 
 
 setup(
-    name='kiss',
+    name='django_kiss',
     version='0.1',
     description='A Django application for integrating KISSmetrics customer analytics',
     long_description=read('README.md'),
