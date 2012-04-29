@@ -15,7 +15,7 @@ setup(
     long_description=read('README.md'),
     author='John Boxall',
     author_email='john@mobify.com',
-    url='http://github.com/johnboxall/django-kiss',
+    url='http://github.com/johnboxall/django_kiss',
     packages=find_packages(),
     package_data={
         'kiss': [
